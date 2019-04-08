@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/iv_artist"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tv_music_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_artist"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/iv_artist"
+        android:text="音乐"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_music_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_music_title"
+        android:layout_alignBottom="@id/iv_artist"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/iv_artist"
+        android:text="歌手!"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:textSize="12sp" />
+
+</RelativeLayout>

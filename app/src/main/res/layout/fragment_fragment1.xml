@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="android.support.v4.app.ListFragment"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/ly_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFDAB9"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true"
+                android:text="在线音乐"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_musiclist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ly_02"
+            android:layout_above="@id/rl_music"
+            android:layout_marginBottom="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#FFDAB9">
+
+            <ImageView
+                android:id="@+id/iv_singer"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@mipmap/music" />
+
+            <TextView
+                android:id="@+id/tv_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/iv_singer"
+                android:text="音乐"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_singer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_music"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/iv_singer"
+                android:text="歌手!"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/ibtn_playorpause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@mipmap/ic_play"
+                />
+
+            <ImageButton
+                android:id="@+id/ibtn_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="90dp"
+                android:background="@mipmap/ic_up"
+                />
+
+            <ImageButton
+                android:id="@+id/ibtn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/ic_down"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>
